@@ -4,8 +4,6 @@
     $scope.rooms = Room.all;
 
     $scope.open = Modal.open;
-
-
   }
 
 

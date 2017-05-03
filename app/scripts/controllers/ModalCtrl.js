@@ -1,16 +1,13 @@
 (function(){
   function ModalCtrl(Modal, $uibModalInstance, $scope, Room){
 
-    rooms = Room.all;
-
     $scope.createRoom = function(){
-      $uibModalInstance.close(rooms.$add({$value: $scope.addRoom}));
+      $uibModalInstance.close(Room.add({$value: $scope.addRoom}));
     }
 
     $scope.dismiss = function(){
       $uibModalInstance.dismiss('cancel');
     }
-
 
 }
   angular

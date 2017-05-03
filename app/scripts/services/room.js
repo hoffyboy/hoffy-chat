@@ -1,22 +1,17 @@
 (function() {
   function Room($firebaseArray) {
+  var Room = {};
    var ref = firebase.database().ref().child("rooms");
    var rooms = $firebaseArray(ref);
 
+   Room.add = function(room){
+     rooms.$add(room);
+   }
 
-   rooms.$loaded()
-    .then(function(){
-      for(var i = 0; i < rooms.length; i++){
-        console.log(rooms[i])
-      }
-    });
+   Room.all = rooms;
 
-   return {
-     all: rooms
-   };
+   return Room;
  }
-
-
 
   angular
     .module('blocChat')
