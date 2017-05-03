@@ -1,4 +1,13 @@
 <div class="chat-rooms">
-  <h1 class="main">Bloc Chat</h1>
+
+    <h1 class="main">Bloc Chat</h1>
+    <!-- <ng-include src="'/modal.html'">hey</ng-include> -->
+    <button type="button" class="btn btn-primary float-right" ng-click="open()">
+      New room
+    </button>
+
+
+
   <h2 class="rooms" ng-repeat="room in rooms">{{ room.$value }}</h2>
+
 </div>

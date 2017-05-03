@@ -1,14 +1,15 @@
 (function(){
-  function HomeCtrl(Room, $scope){
+  function HomeCtrl(Room, $scope, Modal){
 
     $scope.rooms = Room.all;
 
-    // console.log($scope.rooms);
+    $scope.open = Modal.open;
+
 
   }
 
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['Room', '$scope', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', '$scope', 'Modal', HomeCtrl]);
 })();
