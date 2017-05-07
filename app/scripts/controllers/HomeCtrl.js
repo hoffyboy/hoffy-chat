@@ -7,6 +7,7 @@
       var modalInstance = $uibModal.open({
         templateUrl: 'templates/modal.html',
         controller: 'ModalCtrl',
+        size: 'sm',
       });
       modalInstance.result.then(function(room) {
         Room.add({$value: room});
@@ -20,10 +21,7 @@
     $scope.getRoomId = function(roomId){
       $scope.messages = Message.getByRoomId(roomId);
     }
-
-    $scope.initRoom = Room.loaded;
   }
-
 
   angular
     .module('blocChat')

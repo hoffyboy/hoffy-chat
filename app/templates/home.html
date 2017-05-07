@@ -2,12 +2,15 @@
   <h1 class="main">Bloc Chat</h1>
   <button type="button" class="new-room-button btn" ng-click="open()">New room</button>
   <div class="rooms-list-container">
-    <h1 class="rooms" ng-repeat="room in rooms" ng-click="selectRoom(room.$value); getRoomId(room.$id)">{{ room.$value }}</h1>
+    <h1 class="rooms" ng-repeat="room in rooms"
+        ng-click="selectRoom(room.$value); getRoomId(room.$id)"
+        ng-init="selectRoom(rooms[0].$value); getRoomId(rooms[0].$id)">
+        {{ room.$value }}</h1>
   </div>
 </aside>
 <main class="chat-room">
   <h1 class="room-name-font">{{ activeRoom }}</h1>
-  <div  class="messages" ng-repeat="message in messages" ng-class-odd="'odd'" ng-class-even="'even'">
+  <div class="messages" ng-repeat="message in messages" ng-class-odd="'odd'" ng-class-even="'even'">
     <h3 class="username">{{ message.username }}</h3>
     <h3 class="sent-at">{{ message.sentAt }}</h3>
     <h3 class="content">{{ message.content }}</h3>

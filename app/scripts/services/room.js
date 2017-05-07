@@ -8,13 +8,6 @@
       rooms.$add(room);
     }
 
-    // Room.loaded = function()
-
-  //   Room.loaded = rooms.$loaded(function(){
-  //   console.log(rooms.$keyAt(0));
-  // });
-    // console.log(Room.initRoom);
-
     Room.all = rooms;
 
     return Room;
