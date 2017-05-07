@@ -17,7 +17,7 @@ body {
 .side-panel {
   margin: 0 auto;
   background-color: #ccc;
-  position: fixed;
+  position: absolute;
   width: 350px;
   height: 100%;
   float: left;

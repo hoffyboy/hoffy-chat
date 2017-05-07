@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="blocChat">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Bloc Base Project</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+  <ui-view></ui-view>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script>
+  var config = {
+    apiKey: "AIzaSyCOc_BDue6VKKDbSdYy2GXr_R2FECh_K1Y",
+    authDomain: "bloc-chat-c8dfd.firebaseapp.com",
+    databaseURL: "https://bloc-chat-c8dfd.firebaseio.com",
+    projectId: "bloc-chat-c8dfd",
+    storageBucket: "bloc-chat-c8dfd.appspot.com",
+    messagingSenderId: "97201117304"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/services/room.js"></script>
+  <script src="/scripts/services/message.js"></script>
+  <script src="/scripts/services/BlocChatCookies.js"></script>
+  <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/controllers/ModalCtrl.js"></script>
+  <script src="/scripts/controllers/UsernameCtrl.js"></script>
+</body>
+</html>
