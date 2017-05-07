@@ -11,15 +11,15 @@ body {
     min-width: 1000px;
     max-width: 1500px;
     min-height: 600px;
-    max-height: 1000px;
+
 }
 
 .side-panel {
   margin: 0 auto;
   background-color: #ccc;
+  position: fixed;
   width: 350px;
   height: 100%;
-  position: relative;
   float: left;
   padding: 5rem 2.5rem;
 }
@@ -32,7 +32,7 @@ body {
 .chat-room {
   width: 100%;
   padding-left: 350px;
-  height: 100%;
+  padding-bottom: 10rem;
   background-color: white;
   padding-top: 1.4rem;
 }
@@ -117,7 +117,7 @@ body {
   width: 110px;
   height: 40px;
   color: #888;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   background-color: #eee;
 }
@@ -128,4 +128,40 @@ body {
 
 .even {
   background-color: #fff;
+}
+
+.message-box {
+
+}
+
+.message-input {
+  width: 100%;
+  padding: 2rem 4rem;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #bbb;
+  border-left-style: none;
+  background-color: #eee;
+  min-width: 700px;
+}
+
+.send-button {
+  width: 100px;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #444;
+  border: 0;
+  border-radius: 0;
+
+
 }

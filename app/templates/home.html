@@ -12,7 +12,11 @@
   <h1 class="room-name-font">{{ activeRoom }}</h1>
   <div class="messages" ng-repeat="message in messages" ng-class-odd="'odd'" ng-class-even="'even'">
     <h3 class="username">{{ message.username }}</h3>
-    <h3 class="sent-at">{{ message.sentAt }}</h3>
+    <h3 class="sent-at">{{ message.sentAt | date : 'MMM d, y h:mm a' }}</h3>
     <h3 class="content">{{ message.content }}</h3>
   </div>
+  <form class="message-box" ng-submit="send(newMessage)">
+    <input type="text" class="message-input" ng-model="newMessage" placeholder="Write your message here...">
+    <button type="button" class="send-button" ng-click="send(newMessage)">Send</button>
+  </form>
 </main>

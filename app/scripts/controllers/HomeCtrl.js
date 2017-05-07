@@ -21,6 +21,13 @@
     $scope.getRoomId = function(roomId){
       $scope.messages = Message.getByRoomId(roomId);
     }
+
+    $scope.send = function(newMessage){
+      if ($scope.newMessage){
+        Message.send(newMessage);
+        $scope.newMessage = "";
+      }
+    }
   }
 
   angular
