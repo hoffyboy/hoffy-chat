@@ -27,7 +27,7 @@ var Hapi = require('hapi'),
             method: 'GET',
             path: '/{path*}',
             handler: {
-                file: path.join(__dirname, '/app/index.html')
+                file: path.join(__dirname, '/index.html')
             }
         }
     };
@@ -50,7 +50,7 @@ function onServerStarted() {
 function createDirectoryRoute(directory) {
     return {
         directory: {
-            path: path.join(__dirname, '/app/', directory)
+            path: path.join(__dirname, directory)
         }
     };
 }
