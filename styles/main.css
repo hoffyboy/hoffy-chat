@@ -8,16 +8,16 @@ body {
     height: 100%;
     width: 100%;
     font-size: 100%;
-    min-width: 1000px;
+    min-width: 500px;
     max-width: 1500px;
     min-height: 600px;
-
 }
 
 .side-panel {
   margin: 0 auto;
   background-color: #ccc;
   position: fixed;
+  bottom: 0;
   width: 350px;
   height: 100%;
   float: left;
@@ -31,17 +31,17 @@ body {
 
 .chat-room {
   width: 100%;
-  padding-left: 350px;
-  padding-bottom: 10rem;
+  padding: 1.4rem 0 200px 350px;
   background-color: white;
-  padding-top: 1.4rem;
+
 }
 
 .messages {
   width: 100%;
+  height: auto;
   background-color: #eeeeee;
   left: 0;
-  padding: 1.6rem 4rem;
+  padding: 1.4rem 4rem;
 }
 
 .main {
@@ -69,14 +69,16 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   display: inline;
+  line-height: 2.2rem;
 }
 
 .content {
   font-size: 1.6rem;
   font-weight: 400;
-  padding: 0;
-  margin: .5rem 0 0 0;
+  padding: 0 175px 0 0;
+  margin: 0 0 0 0;
   font-family: 'Open Sans', sans-serif;
+  line-height: 2.2rem;
 }
 
 .sent-at {
@@ -88,6 +90,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   float: right;
+  line-height: 2.2rem;
 }
 
 
@@ -146,11 +149,11 @@ body {
   border: 1px solid #bbb;
   border-left-style: none;
   background-color: #eee;
-  min-width: 700px;
+  margin-top: 4rem;
 }
 
 .send-button {
-  width: 100px;
+  width: 110px;
   height: 70px;
   bottom: 0;
   right: 0;
@@ -162,6 +165,40 @@ body {
   background-color: #444;
   border: 0;
   border-radius: 0;
+}
 
+@media(max-width: 1000px){
+  .side-panel {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 2rem 2rem;
+    top: 0;
+    margin-bottom: 4rem;
+  }
+  .chat-room {
+    padding: 0 0 200px 0;
+    position: static;
+
+  }
+  .rooms, .rooms:hover {
+    display: inline;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    line-height: 3.5rem;
+    align-items: center;
+  }
+  .rooms-list-container {
+    width: 100%;
+    align-self: center;
+  }
+  .messages {
+    padding: 1.6rem 2rem;
+  }
+  .room-name-font {
+    padding-left: 2rem;
+    margin-top: 0;
+    /*padding-top: 20px;*/
+  }
 
 }
