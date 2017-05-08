@@ -193,7 +193,7 @@ body {
   border-radius: 0;
 }
 
-@media (max-width: 751px) {
+@media screen and (max-width: 751px) {
   .side-panel {
     width: 100%;
     height: auto;
