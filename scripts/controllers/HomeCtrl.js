@@ -1,5 +1,5 @@
 (function(){
-  function HomeCtrl(Room, $scope, Message, $uibModal){
+  function HomeCtrl(Room, $scope, Message, $uibModal, $filter){
 
     $scope.rooms = Room.all;
 
@@ -28,9 +28,20 @@
         $scope.newMessage = "";
       }
     }
-  }
+
+    $scope.date = function(i, first){
+      var filteredDate = $filter('date')($scope.messages[i].sentAt, 'EEEE, MMM d');
+      var filteredPreviousDate = $filter('date')($scope.messages[i - 1].sentAt, 'EEEE, MMM d');
+
+      if(filteredDate !== filteredPreviousDate){
+        return true
+      } else if (first) {
+        return true
+      }
+}
+}
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['Room', '$scope', 'Message', '$uibModal', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', '$scope', 'Message', '$uibModal', '$filter', HomeCtrl]);
 })();

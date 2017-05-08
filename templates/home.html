@@ -10,7 +10,11 @@
 </aside>
 <main class="chat-room">
   <h1 class="room-name-font">{{ activeRoom }}</h1>
+
   <div class="messages" ng-repeat="message in messages" ng-class-odd="'odd'" ng-class-even="'even'">
+    <div class="date-stamp-container" ng-show="date($index, $first)" ng-class-odd="'odd'">
+      <h3 class="date-stamp" >{{ message.sentAt | date : 'EEE, MMM d' }}</h3>
+    </div>
     <h3 class="username">{{ message.username }}</h3>
     <h3 class="sent-at">{{ message.sentAt | date : 'h:mm a' }}</h3>
     <h3 class="content">{{ message.content }}</h3>

@@ -21,6 +21,10 @@
       });
     };
 
+    // messages.$loaded(function(){
+    //   // var filteredDate = $filter('date')($scope.messages[0].sentAt, 'EEEE, MMM d');
+
+
     return Message;
   }
 

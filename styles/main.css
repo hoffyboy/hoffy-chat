@@ -29,21 +29,6 @@ body {
   width: 100px;
 }
 
-.chat-room {
-  width: 100%;
-  padding: 1.4rem 0 200px 350px;
-  background-color: white;
-
-}
-
-.messages {
-  width: 100%;
-  height: auto;
-  background-color: #eeeeee;
-  left: 0;
-  padding: 1.4rem 4rem;
-}
-
 .main {
   color: #444;
   font-family: 'Open Sans', sans-serif;
@@ -52,47 +37,6 @@ body {
   letter-spacing: -1px;
   display: inline;
 }
-
-.room-name-font {
-  color: #444;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.7rem;
-  font-weight: 600;
-  padding-left: 4rem;
-  margin-bottom: 4rem;
-}
-
-.username {
-  font-size: 1.6rem;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  display: inline;
-  line-height: 2.2rem;
-}
-
-.content {
-  font-size: 1.6rem;
-  font-weight: 400;
-  padding: 0 80px 0 0;
-  margin: 0 0 0 0;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 2.2rem;
-}
-
-.sent-at {
-  font-size: 1.6rem;
-  font-weight: 300;
-  font-style: italic;
-  color: #777;
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  float: right;
-  line-height: 2.2rem;
-}
-
 
 .rooms, .rooms:hover {
   color: #888;
@@ -123,6 +67,88 @@ body {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   background-color: #eee;
+}
+
+.chat-room {
+  width: 100%;
+  padding: 1.4rem 0 200px 350px;
+  background-color: white;
+
+}
+
+.room-name-font {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  padding-left: 3%;
+  margin-bottom: 4rem;
+}
+
+.messages {
+  width: 100%;
+  height: auto;
+  background-color: #eeeeee;
+  left: 0;
+  padding: 1.4rem 3%;
+}
+
+.date-stamp-container {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  /*margin: 2rem;*/
+  padding: 0 0 0 0;
+  margin: 0;
+  /*left: 0;*/
+}
+
+.date-stamp {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2rem;
+  /*float:;*/
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  /*padding: 0 80px 0 0;*/
+
+}
+
+.username {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  display: inline;
+  line-height: 2.5rem;
+  margin: 0;
+  padding: 0;
+  /*padding: */
+  /*margin: 3rem 0 0 4rem;*/
+}
+
+.sent-at {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  float: right;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.content {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.2rem;
+  margin: 0 100px 0 0;
+  padding: 0;
 }
 
 .odd {
@@ -175,6 +201,7 @@ body {
     padding: 2rem 2rem;
     top: 0;
     margin-bottom: 4rem;
+    align-items: baseline;
   }
 
   .chat-room {
@@ -186,7 +213,7 @@ body {
     padding-right: 2rem;
     padding-bottom: 2rem;
     line-height: 3.5rem;
-    align-items: center;
+    text-align: center;
   }
   .rooms-list-container {
     width: 100%;
