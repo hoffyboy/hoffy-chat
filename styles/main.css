@@ -25,17 +25,30 @@ body {
 }
 
 .rooms-list-container {
-  margin-top: 3.5rem;
-  width: 100px;
+
+
 }
 
-.main {
+.main-logo {
   color: #444;
   font-family: 'Open Sans', sans-serif;
   font-size: 3.9rem;
   font-weight: 600;
   letter-spacing: -1px;
-  display: inline;
+  display: inline-block;
+  margin: 0 0 1rem 0;
+}
+
+.new-room-button {
+  float: right;
+  margin: 0;
+  width: 110px;
+  height: 40px;
+  color: #888;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+  display: inline-block;
 }
 
 .rooms, .rooms:hover {
@@ -58,16 +71,6 @@ body {
   background-color: blue;
 }
 
-.new-room-button {
-  float: right;
-  margin: 0;
-  width: 110px;
-  height: 40px;
-  color: #888;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #eee;
-}
 
 .chat-room {
   width: 100%;
@@ -125,8 +128,6 @@ body {
   line-height: 2.5rem;
   margin: 0;
   padding: 0;
-  /*padding: */
-  /*margin: 3rem 0 0 4rem;*/
 }
 
 .sent-at {
@@ -165,7 +166,7 @@ body {
 
 .message-input {
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 2rem 2%;
   height: 70px;
   position: fixed;
   bottom: 0;
@@ -175,7 +176,7 @@ body {
   border: 1px solid #bbb;
   border-left-style: none;
   background-color: #eee;
-  margin-top: 4rem;
+  /*margin-top: 4rem;*/
 }
 
 .send-button {
@@ -193,31 +194,32 @@ body {
   border-radius: 0;
 }
 
+
 @media screen and (max-width: 750px) {
   .side-panel {
     width: 100%;
     height: auto;
     position: static;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     top: 0;
     margin-bottom: 4rem;
     align-items: baseline;
   }
 
+  .main-logo {
+    margin-bottom: 4rem;
+    display: inline-block;
+  }
+
+  .rooms, .rooms:hover {
+    display: inline-block;
+    margin: 1rem 1.5rem 0 1.5rem;
+    /*margin-top: .8rem;*/
+  }
+
   .chat-room {
     padding: 0 0 200px 0;
     position: static;
-  }
-  .rooms, .rooms:hover {
-    display: inline;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    line-height: 3.5rem;
-    text-align: center;
-  }
-  .rooms-list-container {
-    width: 100%;
-    align-self: center;
   }
   .messages {
     padding: 1.6rem 2rem;
@@ -227,5 +229,15 @@ body {
     margin-top: 0;
     /*padding-top: 20px;*/
   }
-
+  .message-input {
+    padding: .5rem 2rem;
+    height: 50px;
+  }
+  .send-button {
+    width: 75px;
+    height: 50px;
+  }
+  .rooms-list-container{
+    text-align: center;
+  }
 }

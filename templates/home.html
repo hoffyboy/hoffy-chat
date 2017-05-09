@@ -1,5 +1,5 @@
 <aside class="side-panel">
-  <h1 class="main">Bloc Chat</h1>
+  <h1 class="main-logo">Bloc Chat</h1>
   <button type="button" class="new-room-button btn" ng-click="open()">New room</button>
   <div class="rooms-list-container">
     <h1 class="rooms" ng-repeat="room in rooms"
@@ -20,7 +20,7 @@
     <h3 class="content">{{ message.content }}</h3>
   </div>
   <form class="message-box" ng-submit="send(newMessage)">
-    <input type="text" class="message-input" ng-model="newMessage" placeholder="Write your message here...">
+    <input type="textarea" class="message-input" ng-model="newMessage" placeholder="Write your message here...">
     <button type="button" class="send-button" ng-click="send(newMessage)">Send</button>
   </form>
 </main>
