@@ -206,8 +206,9 @@ body {
     align-items: baseline;
   }
 
+
   .main-logo {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: inline-block;
   }
 
@@ -225,8 +226,9 @@ body {
     padding: 1.6rem 2rem;
   }
   .room-name-font {
-    padding-left: 2rem;
+    padding-left: 0;
     margin-top: 0;
+    text-align: center;
     /*padding-top: 20px;*/
   }
   .message-input {
