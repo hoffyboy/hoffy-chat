@@ -42,6 +42,6 @@
 }
 
   angular
-    .module('blocChat')
+    .module('hoffyChat')
     .controller('HomeCtrl', ['Room', '$scope', 'Message', '$uibModal', '$filter', HomeCtrl]);
 })();

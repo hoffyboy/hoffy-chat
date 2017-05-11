@@ -24,11 +24,6 @@ body {
   padding: 5rem 2.5rem;
 }
 
-.rooms-list-container {
-
-
-}
-
 .main-logo {
   color: #444;
   font-family: 'Open Sans', sans-serif;
@@ -42,7 +37,7 @@ body {
 .new-room-button {
   float: right;
   margin: 0;
-  width: 110px;
+  width: 100px;
   height: 40px;
   color: #888;
   font-weight: 600;
@@ -100,10 +95,8 @@ body {
   width: 100%;
   height: 30px;
   background-color: #fff;
-  /*margin: 2rem;*/
   padding: 0 0 0 0;
   margin: 0;
-  /*left: 0;*/
 }
 
 .date-stamp {
@@ -111,13 +104,10 @@ body {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   line-height: 2rem;
-  /*float:;*/
   text-align: center;
   margin: 0;
   padding: 0;
   font-weight: 600;
-  /*padding: 0 80px 0 0;*/
-
 }
 
 .username {
@@ -160,10 +150,6 @@ body {
   background-color: #fff;
 }
 
-.message-box {
-
-}
-
 .message-input {
   width: 100%;
   padding: 2rem 2%;
@@ -176,7 +162,6 @@ body {
   border: 1px solid #bbb;
   border-left-style: none;
   background-color: #eee;
-  /*margin-top: 4rem;*/
 }
 
 .send-button {
@@ -206,7 +191,6 @@ body {
     align-items: baseline;
   }
 
-
   .main-logo {
     margin-bottom: 2rem;
     display: inline-block;
@@ -215,7 +199,6 @@ body {
   .rooms, .rooms:hover {
     display: inline-block;
     margin: 1rem 1.5rem 0 1.5rem;
-    /*margin-top: .8rem;*/
   }
 
   .chat-room {
@@ -229,7 +212,6 @@ body {
     padding-left: 0;
     margin-top: 0;
     text-align: center;
-    /*padding-top: 20px;*/
   }
   .message-input {
     padding: .5rem 2rem;

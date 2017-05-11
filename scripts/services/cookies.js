@@ -1,6 +1,6 @@
 (function() {
-  function BlocChatCookies($cookies, $uibModal) {
-    var currentUser = $cookies.get('blocChatCurrentUser');
+  function Cookies($cookies, $uibModal) {
+    var currentUser = $cookies.get('hoffyChatCurrentUser');
     if (!currentUser || currentUser === '') {
 
       var modalInstance = $uibModal.open({
@@ -11,16 +11,16 @@
       })
 
       modalInstance.result.then(function(result) {
-      $cookies.put('blocChatCurrentUser', result);
+      $cookies.put('hoffyChatCurrentUser', result);
       console.log(result);
     });
     }
 
-    // $cookies.remove('blocChatCurrentUser');
-    // console.log(currentUser);
+    // $cookies.remove('hoffyChatCurrentUser');
+
   }
 
   angular
-    .module('blocChat')
-    .run(['$cookies', '$uibModal', BlocChatCookies]);
+    .module('hoffyChat')
+    .run(['$cookies', '$uibModal', Cookies]);
 })();

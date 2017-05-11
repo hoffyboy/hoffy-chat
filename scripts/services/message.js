@@ -17,18 +17,14 @@
         content: newMessage,
         roomId: roomIdentity,
         sentAt: Date.now(),
-        username: $cookies.get('blocChatCurrentUser'),
+        username: $cookies.get('hoffyChatCurrentUser'),
       });
     };
-
-    // messages.$loaded(function(){
-    //   // var filteredDate = $filter('date')($scope.messages[0].sentAt, 'EEEE, MMM d');
-
 
     return Message;
   }
 
   angular
-    .module('blocChat')
+    .module('hoffyChat')
     .factory('Message', ['$firebaseArray', '$cookies', Message]);
 })();

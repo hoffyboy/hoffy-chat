@@ -11,6 +11,6 @@
   }
 
   angular
-    .module('blocChat')
+    .module('hoffyChat')
     .controller('ModalCtrl', ['$uibModalInstance', '$scope', 'Room', ModalCtrl]);
 })();

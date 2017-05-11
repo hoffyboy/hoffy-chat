@@ -15,6 +15,6 @@
   }
 
   angular
-      .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
+      .module('hoffyChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
       .config(config);
 })();

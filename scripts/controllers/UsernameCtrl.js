@@ -9,6 +9,6 @@
   }
 
   angular
-    .module('blocChat')
+    .module('hoffyChat')
     .controller('UsernameCtrl', ['$uibModalInstance', '$scope', UsernameCtrl]);
 })();

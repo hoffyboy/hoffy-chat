@@ -14,6 +14,6 @@
   }
 
   angular
-    .module('blocChat')
+    .module('hoffyChat')
     .factory('Room', ['$firebaseArray', Room]);
 })();
